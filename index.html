@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            background-color: rgb(54, 51, 51);
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .topmenu {
+            width: 100%;
+            top: 0;
+            position: sticky;
+            left: 0;
+            height: 40px;
+            background-color: rgb(4, 4, 12);
+        }
+        
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .fa-bars {
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 10px 10px;
+        }
+        
+        .fa-bars:hover {
+            color: rgb(165, 158, 158);
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+        
+        .con1 {
+            width: 100vw;
+            height: 200px;
+            background: red;
+        }
+        
+        div.container {
+            overflow: scroll;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .fa-envelope {
+            width: 70px;
+            height: 70px;
+        }
+        
+        button:hover {
+            color: rgb(209, 71, 71);
+        }
+        
+        .fa-envelope {
+            width: 10px;
+            height: 10px;
+            top: 50%;
+            left: 50%;
+        }
+        
+        .btnn {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .navbar {
+            background-color: black;
+        }
+        
+        .card {
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            margin: 6px;
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            justify-self: stretch;
+        }
+        
+        .card-body {
+            margin: 20px;
+        }
+        
+        .card-text {
+            transition: 0.3s;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+            text-align: center;
+            border-radius: 0px 0px 10px 10px;
+            background: rgb(255, 255, 255);
+            color: rgb(107, 107, 107);
+        }
+        
+        .card-title button {
+            width: 80px;
+            height: 40px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border: none;
+            animation-name: example;
+            animation-duration: 4s;
+            border-radius: 5px;
+            font-size: small;
+            margin-left: 32%;
+        }
+        
+        .fa-dumbbell {
+            color: white;
+        }
+        
+        .wwa {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="topmenu">
+        <button class="fas fa-bars" onclick="openNav()"></button>
+    </div>
+    <div class="container-sm">
+
+        <div class="sss">
+
+            <div class="card-columns">
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEiEpI1LuNacMTK5hnwuH_iRYtGovpo2ywhw4kvx1AvWk0oR908bq7sUnPU0jF1TDWn6Jg-rbEQYG7xNmLzY3N03pyss-AeaCPDoaf53hilJoL-zI1mR6rHFPThTneYWWVREIu8DfcHoynTXXCEtODBXAFrzq6Se7ReV6fSCby18seBfkyWTI-u_hA=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">CALF <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='calf.html'"><i class="fa fa-clock"></i>  Start</button></h4>
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                Well-developed calves are one of the key components to a balanced lower body. However, the calves tend to be known as one of the more challenging muscle groups for many people to build and grow. Unless genetically blessed with developed calf muscles,
+                                most clients must work to build them.
+                            </div>
+                            <br>
+                        </div>
+                        <br>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEjNnO7eDkhOUFDiwtOrhpYUIfzwSJmz1I6GCTJfTEnM52kZGADVQfJ19v103Qp2WYCymokpLuaDNVQ_zOx9WMYsG2YdxE3-6W70AoKKyBCSLXNoJ_K_uVbBBJtbHzNalVs3hkqpW3wl6cZvSvaik3jt9iGNhzpnf1MEb1Qayr-vuFrrTha0V8iXOw=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">LEG <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='leg.html'"><i class="fa fa-clock"></i> Start</button></h4>
+
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                Strong legs do more than look good. Even the simplest daily movements like walking require leg strength. This means that incorporating leg workouts into your routine is integral to your health.
+                            </div>
+                            <br>
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEiXbJXIku_5OegLPewrxPuhhDIkjjNwCxaLjWbcpJxouyn4YxisdzazModBO63tNMkcLQoVDJyhHd6BFDzpX1xO12u_kOFrefSOZZUnjagGooDVBahUN71sr188DQGO-y0BPTY1hvXdaMwV0w5oukmXjg4KPFG7o42l2yKOXZxihBJ2EIHFN8w99Q=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">BACK <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='back.html'"><i class="fa fa-clock"></i> Start</button></h4>
+
+
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                A big, strong back can take you far in your athletic endeavors. The back muscles help you to twist your torso, pull your arms in and down from overhead, and, most importantly, stabilize your spine.
+                            </div>
+                            <br>
+                        </div>
+
+                        <br>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEhYAN3Og4EBGkX_6QumWBYHPanuRGWGdr5I9bvkCJkaj6f7a0U31mc9qLu0M2t0mBQ8YqA6gjGmG8VjsMBmhT-TbVocg3QRNxyJBWXJOfOvJnPHwBwuPyVB6utSZpEhLeg4RRJ84CZEnIcWt2iYomQun7sHrMWStXCszQmZZkemfJLVFZy9zicr_w=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">TRICEPS <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='ticeps.html'"><i class="fa fa-clock"></i> Start</button></h4>
+
+
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                If you are looking to refresh your upper-body routine, adding in a few of the best triceps exercises out there is a good way to do so. Not only will these moves make your same old workout more interesting, but they will also help you get stronger both
+                                in and out of the gym.
+                            </div>
+
+                            <br>
+
+                        </div>
+                        <br>
+
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEie11vK6Wk_dpYiWNntVG1-oxqDuCp4zVpUDbQcUOTm1ZuM8lDJBJ87FscSZyklq6mhScU6s3r2wH93T2e4uz5n1SBWGQeZIMAba_YisSv_Qm62GKgEKzzbbB3XweHe9KlKzkI6C92tmxCYfh_p3IQeusKloRSSl0LV9BIiLyTCjzshMJS7aSiHMw=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">CHEST <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='chest.html'"><i class="fa fa-clock"></i> Start</button></h4>
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                For most guys, a chest workout involves alternating between three chest exercises: bench press completed in the flat, incline and decline positions. But it needn't be that way.
+                            </div>
+
+                            <br>
+
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEimVrzeTdrEnfF4tr7MWtuuJndgZKCXtYYqDfMPWVAzPiwUNZ7ojVVzjcdkdgPxd9_K1Nmvn3RDSFJYuF6UJGkvEGi0sbNH4OhJkRThxyPJotsWAwgiNopv-5KijMJL8dor5Vv5BEAD9BP4cD26yRT4RL9qQ339ZtIhtLMx7eCSdhX2j0uTKnON6Q=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">SHOULDER <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='shoulder.html'"><i class="fa fa-clock"></i> Start</button></h4>
+
+
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                It is also, however, absolutely essential to schedule some shoulder-specific exercises into your workouts, because without strong Noddy Holders, you’re going to come up short when attempting all sorts of other lifts, especially when training your chest
+                                and back.
+                            </div>
+
+                            <br>
+
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://blogger.googleusercontent.com/img/a/AVvXsEh9rPwn8syqDPX31X1lcMy6LtVqYfR2jqHfNbyAJqV87LYtznGLYAvRtYVnpijDXWZnTgsLcY8N749De8xtX3fRsjq984eNIUeAy5bj93-LfYls0Ygmw52Ug_GjyQDExngtY_VqqrqROISlEp1izbLsdwxddaTqWcjpprhAcr4fQGy8iVWwHYnuhg=s1280"
+                        alt="">
+                    <div class="card-body">
+
+                        <h4 class="card-title">BICEPS <i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><i class="fa fa-arrow-circle-right" aria-hidden="true"></i><button onclick="window.location.href='biceps.html'"><i class="fa fa-clock"></i> Start</button></h4>
+
+
+                        <div class="card-text">
+                            <br>
+                            <div class="wwa">
+                                We all want bigger biceps. Well, most of us do. They look great in a fitted white t-shirt, look even better out of them, and help compliment a well-defined torso. Yes, some people will say exercising your biceps in isolation is stupid. We understand,
+                                but some days we just long for the pump. And you know what? There's no shame in that.
+                            </div>
+
+                            <br>
+
+                        </div>
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <div id="mySidebar " class="sidebar ">
+                <a href="javascript:void(0) " class="closebtn " onclick="closeNav() ">×</a>
+                <a href="# ">About</a>
+                <a href="# ">Services</a>
+                <a href="# ">Clients</a>
+                <a href="# ">Contact</a>
+            </div>
+            <br>
+            <br>
+            <nav class="navbar navbar-default navbar-fixed-bottom " role="navigation ">
+                <div class="btnn ">
+
+                    <i class="fas fa-dumbbell    "></i> PRO WORKOUT
+
+                </div>
+            </nav>
+
+
+
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar ").style.width = "250px ";
+                document.getElementById("main ").style.marginLeft = "250px ";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar ").style.width = "0 ";
+                document.getElementById("main ").style.marginLeft = "0 ";
+            }
+        </script>
+
+
+
+</html>
